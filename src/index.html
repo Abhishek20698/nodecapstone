@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" sizes="32*32" href="https://www.youtube.com/s/desktop/000d7185/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Youtube Subscriber</title>
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            /* background-color: rgb(131, 249, 249); */
+            /* background: rgb(77, 65, 65); */
+            background: radial-gradient(circle, rgb(196, 238, 113) 5%, rgba(0, 255, 240, 1) 100%);
+        }
+
+        .main {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        .logo {
+            /* border: 2px burlywood solid; */
+            text-align: center;
+            width: full;
+            height: 70px;
+            justify-content: left;
+            padding-left: 10px;
+            margin-bottom: 50px;
+            /* background-color: bisque; */
+        }
+
+        .container {
+            padding: 2px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2px;
+            border: 2px white solid;
+            width: 60%;
+            height: 80%;
+            background-color: rgb(191, 237, 237);
+            text-align: center;
+            align-items: center;
+            color: brown;
+        }
+
+        h1 {
+            padding-bottom: 1pt;
+        }
+
+        li {
+            padding: 5px;
+            margin: 1px;
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="./image/almabetter.png" alt="AlmaBetter" style="width: 16rem; margin-bottom: 20px;">
+
+        </div>
+        <div class="container">
+            <!-- Project Title and Decription -->
+
+            <h1>Get Youtube Subscribers</h1>
+
+            <!-- <p>This is an AlmaBetter Capstone Project for Getting Youtube Subscribers from the Database</p> -->
+            <h2>The Webpage contains following APIs-</h2>
+            <ol>
+                <!-- this is the UI for getting all subscribers detail from database -->
+                <li class="list"> <strong>GET </strong> <a href="subscribers"><em>/subscribers</em></a>: Gives a
+                    list of all
+                    Subscribers from Database</li>
+
+                <!-- this is the UI for getting all subscscribers name and subscribed channel detail only from database -->
+                <li> <strong>GET </strong><a href="subscribers/names"><em>/subscribers/names</em></a>
+                    : Gives a list of all Subscribers by Name and Subscribed Channel</li>
+
+                <!-- this is the UI for getting all subscribers detail by giving subscriber id from database -->
+                <li class="list3"> <strong>GET </strong><a href="subscribers/:id"></a><em>/subscribers/:id</em>: To Find
+                    a subscriber
+                    by ID</li>
+
+            </ol>
+
+        </div>
+    </div>
+</body>
+
+</html>
