@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "65b72fe73f693a37adbae661"
+  },
+  "name": "Virat Kohli",
+  "subscribedChannel": "Anushka Vines",
+  "subscribedDate": {
+    "$date": "2024-01-29T14:11:41.455Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b731a43f693a37adbae662"
+  },
+  "name": "MS Dhoni",
+  "subscribedChannel": "freeCrickCamp.org",
+  "subscribedDate": {
+    "$date": "2024-01-29T14:11:41.457Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b731d13f693a37adbae663"
+  },
+  "name": "Rinku Singh",
+  "subscribedChannel": "UnlearnEnglish",
+  "subscribedDate": {
+    "$date": "1998-06-21T00:00:00.000Z"
+  }
+}]
