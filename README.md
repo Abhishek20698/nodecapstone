@@ -81,11 +81,11 @@ node createDatabase.js
 
 **Link to visit Youtube Subscriber video**: 
 
-**Web Deployed Link**: https://get-youtube-subscribers-sjg7.onrender.com/
+**Web Deployed Link**: 
 
 
 ## 🎋 `COLLABORATORS`
-Special Thanks to Md Shahnawaz for Providing me "Database url" for mongodb connection in OPEN SOURCE Platform
+Special Thanks to Md Shahnawaz for Providing me mongodb remote database url.
 
 - [@MD Shahnawaz](https://github.com/Shahnawaz1967)
 
