@@ -85,7 +85,7 @@ node createDatabase.js
 
 
 ## 🎋 `COLLABORATORS`
-Special Thanks to Md Shahnawaz for DATABASE URL PROVIDED IN OPEN SOURCE
+Special Thanks to Md Shahnawaz for Providing me "Database url" for mongodb connection in OPEN SOURCE Platform
 
 - [@MD Shahnawaz](https://github.com/Shahnawaz1967)
 
