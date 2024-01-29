@@ -52,7 +52,7 @@ The project includes three GET routes, each serving a specific purpose:
 1. Clone this repository:
 
 ```bash
-  
+  https://github.com/Abhishek20698/nodecapstone.git
 ```
 
 2. Install dependencies:
