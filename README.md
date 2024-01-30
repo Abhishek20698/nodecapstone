@@ -79,7 +79,7 @@ node createDatabase.js
 
 ## ✨`Deployment`
 
-**Link to visit Youtube Subscriber video**: 
+**Link to visit Youtube Subscriber video**: https://youtu.be/61ef7hzaEUo
 
 
 
