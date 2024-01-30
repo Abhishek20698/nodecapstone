@@ -81,7 +81,6 @@ node createDatabase.js
 
 **Link to visit Youtube Subscriber video**: 
 
-**Web Deployed Link**: 
 
 
 ## 🎋 `COLLABORATORS`
