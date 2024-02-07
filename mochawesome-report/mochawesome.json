@@ -1,0 +1,406 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2024-02-06T05:33:09.511Z",
+    "end": "2024-02-06T05:33:19.580Z",
+    "duration": 10069,
+    "testsRegistered": 7,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ea7c41dd-3370-4724-a966-89123acecbc4",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8dc15d06-a51c-4b50-a25f-869d3f04cdab",
+          "title": "API Routes",
+          "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\test.js",
+          "file": "\\__tests__\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"API Routes\"",
+              "fullTitle": "API Routes \"before all\" hook in \"API Routes\"",
+              "timedOut": false,
+              "duration": 17,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Connect to a test database or perform any setup you need\n// This will depend on your testing environment and strategy\nawait mongoose.connect('mongodb+srv://ashahnawaz010:WkrqkxVLaDvEZnE7@cluster0.dzgsqgw.mongodb.net/', {\n  useNewUrlParser: true,\n  useUnifiedTopology: true,\n});",
+              "err": {
+                "message": "Error: querySrv EREFUSED _mongodb._tcp.cluster0.dzgsqgw.mongodb.net",
+                "estack": "Error: querySrv EREFUSED _mongodb._tcp.cluster0.dzgsqgw.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)",
+                "diff": null
+              },
+              "uuid": "75e5c0e3-493f-41fe-9f88-b8ad700c9756",
+              "parentUUID": "8dc15d06-a51c-4b50-a25f-869d3f04cdab",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"API Routes\"",
+              "fullTitle": "API Routes \"after all\" hook in \"API Routes\"",
+              "timedOut": false,
+              "duration": 10,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Disconnect from the test database or perform any cleanup\nawait mongoose.disconnect();",
+              "err": {},
+              "uuid": "f6bf7425-dd5f-4888-ab04-051cecbc28d9",
+              "parentUUID": "8dc15d06-a51c-4b50-a25f-869d3f04cdab",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "2508c9ee-0dcd-493a-bee7-3d9d11312099",
+              "title": "GET /subscribers",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\test.js",
+              "file": "\\__tests__\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get all subscribers",
+                  "fullTitle": "API Routes GET /subscribers should get all subscribers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get(\"/subscribers\")\n  .end((err, res) => {\n    res.should.have.status(200);\n    res.body.should.be.a(\"array\");\n    //res.body.length.should.be.eql(0); // Assuming no subscribers initially\n    done();\n  });",
+                  "err": {},
+                  "uuid": "e64a01ad-44ed-4b74-b748-fa8d26301048",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "e64a01ad-44ed-4b74-b748-fa8d26301048"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "c9ff8ecc-4a36-4913-ac34-9c6d5d91032e",
+              "title": "GET /subscribers/names",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\test.js",
+              "file": "\\__tests__\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get subscribers by name and subscribedChannel",
+                  "fullTitle": "API Routes GET /subscribers/names should get subscribers by name and subscribedChannel",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get(\"/subscribers/names\")\n  .end((err, res) => {\n    res.should.have.status(200);\n    res.body.should.be.a(\"array\");\n    // Add more assertions based on your expected response\n    done();\n  });",
+                  "err": {},
+                  "uuid": "48a9b352-9d93-43d3-97a6-87bcf8190769",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "48a9b352-9d93-43d3-97a6-87bcf8190769"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "5f297195-74aa-4a58-8795-056f29cff36c",
+              "title": "GET /subscribers/:id",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\test.js",
+              "file": "\\__tests__\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get a subscriber by id",
+                  "fullTitle": "API Routes GET /subscribers/:id should get a subscriber by id",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const newSubscriber = new Subscriber({\n  name: \"John Doe\",\n  subscribedChannel: \"Example Channel\",\n});\nnewSubscriber.save((err, subscriber) => {\n  chai.request(app)\n    .get(`/subscribers/${subscriber.id}`)\n    .end((err, res) => {\n      res.should.have.status(200);\n      res.body.should.be.a(\"object\");\n      res.body.should.have.property(\"name\").eql(\"John Doe\");\n      // Add more assertions based on your expected response\n      done();\n    });\n});",
+                  "err": {},
+                  "uuid": "8a9fae99-06fe-4742-af4e-4986df87708b",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "should return an error if subscriber is not found",
+                  "fullTitle": "API Routes GET /subscribers/:id should return an error if subscriber is not found",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get(\"/subscribers/invalid_id\")\n  .end((err, res) => {\n    res.should.have.status(400);\n    res.body.should.have.property(\"message\").eql(\"subscriber not found\");\n    done();\n  });",
+                  "err": {},
+                  "uuid": "6b1ac042-1b8d-4776-90ff-2d6528e4093d",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "8a9fae99-06fe-4742-af4e-4986df87708b",
+                "6b1ac042-1b8d-4776-90ff-2d6528e4093d"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "c26ca3dd-c580-4c28-9590-b7ffae14d1f9",
+          "title": "Subscribers API",
+          "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\tests.js",
+          "file": "\\__tests__\\tests.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "7d7d32d7-0eeb-451a-b1a5-46f66508fcc2",
+              "title": "GET /subscribers",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\tests.js",
+              "file": "\\__tests__\\tests.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get a list of all subscribers",
+                  "fullTitle": "Subscribers API GET /subscribers should get a list of all subscribers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get('/subscribers')\n  .end((err, res) => {\n    if (err) return done(err);\n    expect(res).to.have.status(200);\n    expect(res.body).to.be.an('array');\n    done();\n  });",
+                  "err": {
+                    "message": "TypeError: app.address is not a function",
+                    "estack": "TypeError: app.address is not a function\n    at serverAddress (node_modules\\chai-http\\lib\\request.js:282:18)\n    at new Test (node_modules\\chai-http\\lib\\request.js:271:53)\n    at obj.<computed> [as get] (node_modules\\chai-http\\lib\\request.js:239:14)\n    at Context.<anonymous> (__tests__\\tests.js:14:10)\n    at process.processImmediate (node:internal/timers:476:21)",
+                    "diff": null
+                  },
+                  "uuid": "126b2bf9-db82-4e1f-9693-689b58763035",
+                  "parentUUID": "7d7d32d7-0eeb-451a-b1a5-46f66508fcc2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "126b2bf9-db82-4e1f-9693-689b58763035"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "c966d937-8444-4ee6-82e6-d4c7e6d98c5f",
+              "title": "GET /subscribers/names",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\tests.js",
+              "file": "\\__tests__\\tests.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get names and subscribed channels for each subscriber",
+                  "fullTitle": "Subscribers API GET /subscribers/names should get names and subscribed channels for each subscriber",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get('/subscribers/names')\n  .end((err, res) => {\n    if (err) return done(err);\n    expect(res).to.have.status(200);\n    expect(res.body).to.be.an('array');\n    // Add more assertions as needed\n    done();\n  });",
+                  "err": {
+                    "message": "TypeError: app.address is not a function",
+                    "estack": "TypeError: app.address is not a function\n    at serverAddress (node_modules\\chai-http\\lib\\request.js:282:18)\n    at new Test (node_modules\\chai-http\\lib\\request.js:271:53)\n    at obj.<computed> [as get] (node_modules\\chai-http\\lib\\request.js:239:14)\n    at Context.<anonymous> (__tests__\\tests.js:27:10)\n    at process.processImmediate (node:internal/timers:476:21)",
+                    "diff": null
+                  },
+                  "uuid": "bad28ba9-3240-409f-b6fd-ab30252e299b",
+                  "parentUUID": "c966d937-8444-4ee6-82e6-d4c7e6d98c5f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "bad28ba9-3240-409f-b6fd-ab30252e299b"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "4066e673-c065-401b-93dd-15e8a712ca78",
+              "title": "GET /subscribers/:id",
+              "fullFile": "C:\\Users\\Hp\\Desktop\\nodecapstone-main\\__tests__\\tests.js",
+              "file": "\\__tests__\\tests.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get subscriber information by ID",
+                  "fullTitle": "Subscribers API GET /subscribers/:id should get subscriber information by ID",
+                  "timedOut": false,
+                  "duration": 10016,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Fetch a subscriber document from the collection\nconst subscriber = await Subscriber.findOne();\n// Make sure a subscriber document was found\nif (!subscriber) {\n  throw new Error('No subscriber documents found in the collection.');\n}\n// Get the _id from the fetched subscriber document\nconst subscriberId = subscriber._id.toString();\n// Making the actual request using chai-http\nconst response = await chai.request(app).get(`/subscribers/${subscriberId}`);\n\n// Assertions\nexpect(response).to.have.status(200);\nexpect(response.body).to.have.property('_id', subscriberId);\n// Add more assertions as needed",
+                  "err": {
+                    "message": "MongooseError: Operation `subscribers.findOne()` buffering timed out after 10000ms",
+                    "estack": "MongooseError: Operation `subscribers.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:198:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                    "diff": null
+                  },
+                  "uuid": "44a06e8f-2301-4563-845d-3c84d4bd4474",
+                  "parentUUID": "4066e673-c065-401b-93dd-15e8a712ca78",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "44a06e8f-2301-4563-845d-3c84d4bd4474"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10016,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
