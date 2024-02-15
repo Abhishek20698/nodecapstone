@@ -61,16 +61,14 @@ The project includes three GET routes, each serving a specific purpose:
  npm i
 ```
 
-3. Create a .env file and add monogodb uri
-
-4. Create a database:
+3. Create a database:
 
 ```bash
 npm run load-data
 
 ```
 
-5. Start the application:
+4. Start the application:
 
 ```bash
 npm start
