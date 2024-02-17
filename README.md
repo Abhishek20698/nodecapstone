@@ -77,7 +77,7 @@ npm start
 
 ## ✨`Deployment`
 
-**Link to visit Youtube Subscriber video**: 
+**Link to visit Youtube Subscriber video**: https://youtu.be/GKNvhzfXKkg
 
 **Web Deployed Link**: https://youtube-subscribers-sigma.vercel.app/
 
